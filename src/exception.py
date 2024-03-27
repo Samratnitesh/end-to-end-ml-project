@@ -1,8 +1,7 @@
 import sys
-import logging
 
 # THIS IS HOW OUR ERROR MESSAGE IS GOING TO DISPLAY
-# USE IT EVERYTIME WE GET TRY CATCH ERROR
+# USE IT EVERYTIME WE GET TRY EXCEPT
 
 def error_message_details(error, error_detail:sys):  
     _,_, exc_tb = error_detail.exc_info()
