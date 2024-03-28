@@ -1,4 +1,5 @@
 import sys
+from src.logger import logging
 
 # THIS IS HOW OUR ERROR MESSAGE IS GOING TO DISPLAY
 # USE IT EVERYTIME WE GET TRY EXCEPT
@@ -15,5 +16,6 @@ class CustomException(Exception):
         super().__init__(error_message)
         self.error_message = error_message_details(error_message, error_detail=error_detail)
 
-    def __str__(self):
+    def __str__(self): # This method is overridden to return the detailed error message when the exception is converted to a string.
         return self.error_message
+
